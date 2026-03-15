@@ -21,7 +21,6 @@ section {
 
 .container {
  margin-bottom: 4px;
- padding: 0 96px;
 }
 
 .row {
@@ -56,6 +55,13 @@ h1 {
     font-weight: 600;
     margin: 16px 0;
     letter-spacing: 0.025em;
+}
+
+.section__para {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 16px;
 }
 
 /* NAVIGATION */
@@ -146,7 +152,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color:rgb(255, 235, 205);
-    padding: 32px;
+    padding: 32px 0;
 }
 
 .header__description {
@@ -319,4 +325,14 @@ h1 {
 
 .service__sunday .service__button a {
     color:rgb(65, 65, 16);
+}
+
+/* MISSION */
+
+.mission__row {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 24px 0;
 }
