@@ -330,6 +330,7 @@ h1 {
 /* MISSION */
 
 .mission__row {
+max-width: 1400px;
 display: flex;
 flex-direction: column;
 align-items: center;
