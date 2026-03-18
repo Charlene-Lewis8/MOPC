@@ -342,6 +342,7 @@ padding: 24px 0;
 
 /* LEADERS */
 .founder__row {
+    width: 100%;
     max-width: 1600px;
     display: flex;
     flex-direction: column;
