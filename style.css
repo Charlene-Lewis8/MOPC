@@ -152,6 +152,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color:rgb(255, 235, 205);
+    border-radius: 16px;
     padding: 32px 0;
 }
 
@@ -335,5 +336,88 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+margin-bottom: 32px;
 padding: 24px 0;
+}
+
+/* LEADERS */
+.founder__row {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder__img {
+    height: 350px;
+    width: 250px;
+    border-radius: 125px;
+    margin: 8px 0;
+}
+#founder .section__tag {
+    margin-bottom: 16px;
+}
+
+#founder a {
+    color: rgb(65, 65, 16);
+    font-size: 24px;
+}
+
+#founder a:hover {
+    transform: scale(1.02) translateY(-1px);
+    text-decoration: underline;
+}
+
+.founder__title {
+    font-weight: bold;
+}
+
+.pastors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.pastor {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastor__img {
+    max-height: 380px;
+}
+
+.pastor__img--wrapper {
+    margin: 8px;
+    border-radius: 125px;
+    overflow: hidden;
+    display: flex;
+}
+
+.pastor__name {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.pastor__date {
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pastor__scripture {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color:rgb(65, 65, 16);
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    flex-wrap: wrap;
 }
