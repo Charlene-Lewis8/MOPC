@@ -42,6 +42,29 @@ h1 {
     font-size: 48px;
     line-height: 1.25;
 }
+input, textarea {
+    width: 100%;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 1px solid #c0c4cc;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
 
 .section__tag {
     font-size: 48px;
@@ -200,6 +223,9 @@ h1 {
 }
 
 /* WORSHIP */
+#worship {
+    position: relative;
+}
 
 .worship__row {
     display: flex;
@@ -592,3 +618,152 @@ footer h3 {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+/*MODAL*/
+
+.modal__half {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -32%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 620px;
+    height: 700px;
+    background-color: rgb(255, 235, 205);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgb(65, 65, 16);
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal--open .modal__half {
+    z-index: 60;
+    box-shadow: 0 20px 80px rgb(0, 0, 0, 0.55);
+    visibility: visible;
+    transition: all 300ms ease;
+}
+
+
+.modal__title {
+    font-size: 32px;
+}
+
+.modal__sub-title {
+    margin: 12px 0 24px 0;
+    font-size: 24px;
+}
+
+.form__item {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form__item--label {
+    width: 200px;
+}
+
+.form__submit {
+    background-color:rgb(65, 65, 16);
+    border: 2px solid rgb(65, 65, 16);
+    color: white;
+    border-radius: 500px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(65, 65, 16);
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 32px;
+    z-index: 100;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.modal__overlay--loading {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+}
+
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size:40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 48px;
+    color: white;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        color: rgb(65, 65, 16);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color:rgb(65, 65, 16);
+    position: fixed;
+    bottom: 10px;
+    right: 32px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.3);
+}
+
+.fa-solid {
+    color: rgb(255, 235, 205);
+    cursor: pointer;
+}
+.mail__btn:hover {
+     transform: scale(1.03);
+}
+   
